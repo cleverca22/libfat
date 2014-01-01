@@ -47,6 +47,11 @@ extern DISC_INTERFACE usb2mass_ops_2;
 static const DISC_INTERFACE* get_io_ata(void) {
 	return &xenon_ata_ops;
 }
+
+static const DISC_INTERFACE* get_io_usbstorage(void) {
+	return &usb2mass_ops_0;
+}
+
 static const DISC_INTERFACE* get_io_usbstorage_0(void) {
 	return &usb2mass_ops_0;
 }
